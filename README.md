@@ -86,6 +86,7 @@ Developer
 Pipeline Summery :-
 
 Git Push
+
     ↓
 GitHub Actions
     ↓
