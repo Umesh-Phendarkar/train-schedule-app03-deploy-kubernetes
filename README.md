@@ -82,3 +82,33 @@ Developer
     ▼
 17. Application Successfully Deployed
        - Running on Kubernetes Cluster
+
+Pipeline Summery :-
+
+Git Push
+    ↓
+GitHub Actions
+    ↓
+Checkout
+    ↓
+Setup Node
+    ↓
+npm install
+    ↓
+Unit Tests
+    ↓
+Docker Build
+    ↓
+Docker Push
+    ↓
+Copy Kubernetes YAML
+    ↓
+SSH to Kubernetes Master
+    ↓
+kubectl apply
+    ↓
+Rolling Update
+    ↓
+Deployment Verification
+    ↓
+Application Live
