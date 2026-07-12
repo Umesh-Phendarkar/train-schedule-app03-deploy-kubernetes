@@ -1,4 +1,5 @@
 apiVersion: apps/v1
+
 kind: Deployment
 
 metadata:
@@ -6,6 +7,7 @@ metadata:
   namespace: train-schedule
 
 spec:
+
   replicas: 2
 
   selector:
@@ -33,21 +35,15 @@ spec:
         - containerPort: 3000
 
         readinessProbe:
-
           httpGet:
             path: /
             port: 3000
-
           initialDelaySeconds: 10
-
           periodSeconds: 5
 
         livenessProbe:
-
           httpGet:
             path: /
             port: 3000
-
           initialDelaySeconds: 20
-
           periodSeconds: 10
