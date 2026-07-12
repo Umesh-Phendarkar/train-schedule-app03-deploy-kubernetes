@@ -85,45 +85,30 @@ Developer
 
 Pipeline Summery :-
 
-
 Git Push
-
     ↓
 GitHub Actions
-
     ↓
 Checkout
-
     ↓
 Setup Node
-
     ↓
 npm install
-
     ↓
 Unit Tests
-
     ↓
 Docker Build
-
     ↓
 Docker Push
-
     ↓
 Copy Kubernetes YAML
-
     ↓
 SSH to Kubernetes Master
-
     ↓
 kubectl apply
-
     ↓
 Rolling Update
-
     ↓
 Deployment Verification
-
     ↓
 Application Live
-
